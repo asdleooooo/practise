@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>扩展卡片</title>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    .contaner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 1000px;
+      height: 100%;
+      margin: auto;
+    }
+
+    .panel {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 130px;
+      height: 600px;
+      flex: 0.5;
+      border-radius: 65px;
+      margin-right: 10px;
+      transition: all 0.3s 0.4s;
+    }
+
+    .panel h3 {
+      color: #fff;
+      font-size: 20px;
+      text-wrap: nowrap;
+      position: absolute;
+      left: 30px;
+      bottom: 30px;
+      opacity: 0;
+    }
+
+    .panel.active h3 {
+      opacity: 1;
+      transition: opacity 0.3s ease-in 0.4s;
+    }
+
+    .panel.active {
+      flex: 5;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contaner">
+    <div class="panel active"
+      style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+      <h3>Explore The World</h3>
+    </div>
+    <div class="panel"
+      style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+      <h3>Explore The World1</h3>
+    </div>
+    <div class="panel"
+      style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+      <h3>Explore The World2</h3>
+    </div>
+    <div class="panel"
+      style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+      <h3>Explore The World3</h3>
+    </div>
+    <div class="panel"
+      style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+      <h3>Explore The World3</h3>
+    </div>
+    <div class="panel"
+      style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+      <h3>Explore The World3</h3>
+    </div>
+  </div>
+</body>
+<script>
+  const panels = document.querySelectorAll('.panel')
+
+  panels.forEach(panel => {
+    panel.addEventListener('click', () => {
+      removeActiveClasses()
+      panel.classList.add('active')
+    })
+  })
+
+  function removeActiveClasses() {
+    panels.forEach(panel => {
+      panel.classList.remove('active')
+    })
+  }
+</script>
+
+</html>
