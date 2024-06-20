@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minmax Example</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: minmax(150px, auto) 100px; /* 第一行最小高度150px，第二行为固定100px */
+      gap: 10px;
+    }
+
+    .grid-item {
+      background-color: lightblue;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">
+      This is some content. This content is small, so the row height should be 150px.This is some content. This content is small, so the row height should be 150px.This is some content. This content is small, so the row height should be 150px.This is some content. This content is small, so the row height should be 150px.This is some content. This content is small, so the row height should be 150px.This is some content. This content is small, so the row height should be 150px.This is some content. This content is small, so the row height should be 150px.This is some content. This content is small, so the row height should be 150px.This is some content. This content is small, so the row height should be 150px.This is some content. This content is small, so the row height should be 150px.This is some content. This content is small, so the row height should be 150px.This is some content. This content is small, so the row height should be 150px.This is some content. This content is small, so the row height should be 150px.This is some content. This content is small, so the row height should be 150px.
+    </div>
+    <div class="grid-item">
+      This is some longer content. This content is larger, so the row height should adjust to fit the content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Proin tincidunt nunc lorem, non congue purus tincidunt in.
+    </div>
+  </div>
+</body>
+</html>

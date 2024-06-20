@@ -1,0 +1,80 @@
+#canvas-container {
+  position: relative;
+  height: 500px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+#canvas {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#controls {
+  display: flex;
+}
+
+#controls .controls-item {
+  width: auto;
+  height: 30px;
+  margin-right: 20px;
+}
+
+#controls .controls-item img {
+  width: 20px;
+  height: 20px;
+}
+
+#status-message {
+  color: green;
+}
+
+#hotspot-form {
+  margin: 10px 0;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+.table-wrap {
+  min-height: 150px;
+  display: block;
+  overflow-y: auto;
+  position: relative;
+}
+
+.table-resizer {
+  height: 5px;
+  cursor: ns-resize;
+  background-color: #ddd;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.table-resizer:active{
+background-color: #46557c;
+}
+
+thead {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #ddd;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}

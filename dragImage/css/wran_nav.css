@@ -1,0 +1,14 @@
+.wran-nav{
+  background-color: #e32620;
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wran-nav img {
+  width: 18px;
+  margin: 0 5px;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>热点区域</title>
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/bread_crumbs.css">
+  <link rel="stylesheet" href="./css/wran_nav.css">
+</head>
+
+<body>
+  <div id="app">
+    <header class="header">
+      <div class="logo">
+        <img src="./images/main/logo.svg" alt="Logo">
+      </div>
+      <nav class="navigation">
+        <div class="header-item-wrap">
+          <img src="./images/main/menu.svg" alt="">
+          <div class="header-item header_menu" id="header_menu" onclick="toggleDropdown('menuDropdown')">
+            MENU
+          </div>
+        </div>
+        <div class="header-item-wrap">
+          <img src="./images/main/book.svg" alt="">
+          <div class="header-item">CATALOG</div>
+        </div>
+        <div class="header-item-wrap">
+          <img src="./images/main/cart.svg" alt="">
+          <div class="header-item">CART</div>
+        </div>
+        <div class="header-item-wrap">
+          <img src="./images/main/order.svg" alt="">
+          <div class="header-item">ORDER</div>
+        </div>
+
+      </nav>
+      <div class="search-container">
+        <input type="text" placeholder="请输入">
+        <button class="search-button">🔍</button>
+      </div>
+      <div id="menuDropdown" class="dropdown-content">
+        <div class="dropdown-item">
+          <h3><img src="./image
+            s/dropdown_menu/exit.svg" alt="Orders Icon">E X I T</h3>
+          <h3><img src="./images/dropdown_menu/user.svg" alt="Orders Icon">MY ACCOUNT</h3>
+          <h3><img src="./images/dropdown_menu/home.svg" alt="Orders Icon">HOME</h3>
+          <h3><img src="./images/dropdown_menu/phone.svg" alt="Orders Icon">CONTACTS</h3>
+          <h3><img src="./images/dropdown_menu/MT_translate.svg" alt="Orders Icon">中文</h3>
+        </div>
+        <div class="dropdown-item">
+          <h3 class="dropdown-seclect">ORDERS</h3>
+          <a href="#"><img src="./images/dropdown_menu/orders.svg" alt="Orders Icon">MY PURCHASE ORDERS</a>
+          <a href="#"><img src="./images/dropdown_menu/shopping.svg" alt="Orders Icon">SHOPPING CART</a>
+          <h3 class="dropdown-seclect">MARKETING</h3>
+          <a href="#"><img src="./images/dropdown_menu/events.svg" alt="Orders Icon">EVENTS</a>
+        </div>
+        <div class="dropdown-item">
+          <h3 class="dropdown-seclect">CATALOGS</h3>
+          <a href="#"><img src="./images/dropdown_menu/search.svg" alt="Orders Icon">SEARCH</a>
+          <a href="#"><img src="./images/dropdown_menu/fav_fill.svg" alt="Orders Icon">FAVORITES</a>
+          <a href="#"><img src="./images/dropdown_menu/new.svg" alt="Orders Icon">NEW PRODUCTS</a>
+        </div>
+      </div>
+    </header>
+    <div class="wran-nav">
+      
+      <h3><img src="./images/nav/w.svg" alt="Orders Icon">Catalog:Weibang</h3>
+      <div><img src="./images/nav/question_mark.svg" alt="Orders Icon"></div>
+    </div>
+    <div class="breadcrumb">
+      <a href="#" class="breadcrumb-item">
+          <img src="./images/nav/home.svg" alt="Home">
+          <img src="./images/nav/arrow-right.svg" alt="">
+      </a>
+      <a href="#" class="breadcrumb-item">ASPIRAFOLGIE
+       <img src="./images/nav/arrow-right.svg" alt="">
+      </a>
+      <a href="#" class="breadcrumb-item">SERVICE CODE: LV506C1800
+        <img src="./images/nav/arrow-down-filling.svg" alt="">
+      </a>
+      <a href="#" class="breadcrumb-item">3 Tendicinghia</a>
+      <div class="breadcrumb-actions">
+          <a href="#" class="breadcrumb-action">
+              <img src="./images/nav/favor_fill.svg" alt="Favorite">
+          </a>
+          <a href="#" class="breadcrumb-action">
+              <img src="./images/nav/other.svg" alt="Other">
+          </a>
+      </div>
+  </div>
+
+    <div class="container">
+      <aside class="sidebar" id="sideBar">
+        <ul class="menu root-menu" id="menu"></ul>
+      </aside>
+      <div class="resizer" id="sidebar-resizer"></div>
+      <main class="main">
+        <div id="controls">
+          <div class="controls-item" id="zoom-out" title="narrow">
+            <img src="./images/main/minus.svg" alt="-">
+          </div>
+          <div class="controls-item" id="zoom-in" title="enlarge">
+            <img src="./images/main/add.svg" alt="+">
+          </div>
+          <div class="controls-item" id="get-coordinates" title="Obtain location">
+            <img src="./images/main/position.svg" alt="+">
+          </div>
+          <div class="controls-item" id="">
+            <img src="./images/main/width_screen.svg" alt="+">
+          </div>
+          <div class="controls-item" id="">
+            <img src="./images/main/hieght_screen.svg" alt="+">
+          </div>
+          <div class="controls-item" id="">
+            <img src="./images/main/max_screen.svg" alt="+">
+          </div>
+          <div class="controls-item" id="reset" title="reset">
+            <img src="./images/main/return.svg" alt="+">
+          </div>
+          <div id="status-message"></div>
+        </div>
+        <div id="canvas-container">
+          <canvas id="canvas"></canvas>
+        </div>
+        <form id="hotspot-form">
+          <label for="label">serial number:</label>
+          <input type="text" id="label" name="label">
+          <label for="des">describe:</label>
+          <input type="text" id="des" name="des">
+          <label for="x">X:</label>
+          <input type="number" id="x" name="x">
+          <label for="y">Y:</label>
+          <input type="number" id="y" name="y">
+          <button type="submit">Add hotspot area</button>
+        </form>
+        <div class="table-wrap" id="table">
+          <div class="table-resizer" id="table-resizer"></div>
+          <table id="hotspot-table">
+            <thead>
+              <tr>
+                <th>serial number</th>
+                <th>describe</th>
+                <th>X</th>
+                <th>Y</th>
+                <th>operate</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="./js/menu.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/dragTable.js"></script>
+  <script src="./js/dragSideBar.js"></script>
+</body>
+
+</html>

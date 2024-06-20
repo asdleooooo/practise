@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px;
+      grid-template-areas:
+        "header header header"
+        "sidebar content content"
+        "footer footer footer";
+      background-color: antiquewhite;
+    }
+
+    .header {
+      grid-area: header;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+    }
+
+    .content {
+      grid-area: content;
+    }
+
+    .footer {
+      grid-area: footer;
+    }
+
+    .container1 {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      background-color: aqua;
+    }
+
+    .item1 {
+      grid-area: 1 / 1 / 2 / 4;
+      /* 从第1行第1列开始，跨到第2行第4列 */
+    }
+
+    .item2 {
+      grid-area: 2 / 1 / 3 / 2;
+      /* 从第2行第1列开始，跨到第3行第2列 */
+    }
+
+    .item3 {
+      grid-area: 2 / 2 / 4 / 4;
+      /* 从第2行第2列开始，跨到第4行第4列 */
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .grid-item {
+      background-color: lightblue;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .grid-item.item1 {
+      grid-row: 1 / 3;
+      /* 从第1行开始，到第3行结束（不包含第3行），即跨2行 */
+    }
+
+    .grid-item.item2 {
+      grid-row: 2 / 4;
+      /* 从第2行开始，到第4行结束（不包含第4行），即跨2行 */
+    }
+
+    .grid-item.item3 {
+      grid-row: 3 / 5;
+      /* 从第3行开始，到第5行结束（不包含第5行），即跨2行 */
+    }
+
+    .grid-item.item4 {
+      grid-row: 1 / span 2;
+      /* 从第1行开始，跨2行 */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">Header</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="content">Content</div>
+    <div class="footer">Footer</div>
+  </div>
+  <div class="container1">
+    <div class="item1">Item 1</div>
+    <div class="item2">Item 2</div>
+    <div class="item3">Item 3</div>
+  </div>
+  <div class="grid-container">
+    <div class="grid-item item1">Item 1</div>
+    <div class="grid-item item2">Item 2</div>
+    <div class="grid-item item3">Item 3</div>
+    <div class="grid-item item4">Item 4</div>
+  </div>
+
+</body>
+
+</html>

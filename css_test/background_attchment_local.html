@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Attachment Comparison</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .box {
+            width: 300px;
+            height: 200px;
+            overflow: auto;
+            border: 2px solid #000;
+            background-image: url('https://via.placeholder.com/300x200');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 10px;
+        }
+        .scroll {
+            background-attachment: scroll;
+        }
+        .local {
+            background-attachment: local;
+        }
+        .content {
+            height: 600px;
+            background: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box scroll">
+            <div class="content">
+                <p>滚动内容 - scroll</p>
+                <p>更多内容</p>
+                <p>更多内容</p>
+                <p>更多内容</p>
+                <p>更多内容</p>
+                <p>更多内容</p>
+            </div>
+        </div>
+        <div class="box local">
+            <div class="content">
+                <p>滚动内容 - local</p>
+                <p>更多内容</p>
+                <p>更多内容</p>
+                <p>更多内容</p>
+                <p>更多内容</p>
+                <p>更多内容</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

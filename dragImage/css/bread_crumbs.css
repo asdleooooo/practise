@@ -1,0 +1,41 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 5px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.breadcrumb-item {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  margin: 0 -1px;
+  line-height: 24px;
+}
+.breadcrumb-item img{
+  width: 20px;
+  vertical-align:text-bottom;
+}
+
+.breadcrumb-separator {
+  margin: 0 5px;
+  color: #999;
+}
+
+.breadcrumb-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-action {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.breadcrumb-action img {
+  width: 20px;
+  height: 20px;
+}

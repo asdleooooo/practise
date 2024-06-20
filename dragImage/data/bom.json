@@ -1,0 +1,61 @@
+[
+    {
+        "imgName": "1.impugnature e sacco",
+        "filePath": "/dragImage/image.png",
+        "nameChinese": "value",
+        "nameEnglish": "value",
+        "materielCode": "value",
+        "specification": "value",
+        "description": "value",
+        "parentMaterielCode": "value",
+        "parentVersion": "value",
+        "numbers": [
+            {
+                "numberValue": 1,
+                "coordinateX": "100",
+                "coordinateY": "100",
+                "nameChinese": "value",
+                "nameEnglish": "value",
+                "materielCode": "value",
+                "specification": "value",
+                "description": "描述1",
+                "price": "value"
+            },
+            {
+                "numberValue": 2,
+                "coordinateX": "200",
+                "coordinateY": "200",
+                "nameChinese": "value",
+                "nameEnglish": "value",
+                "materielCode": "value",
+                "specification": "value",
+                "description": "描述2",
+                "price": "value"
+            }
+        ]
+    },
+    {
+        "imgName": "2.learn",
+        "filePath": "/dragImage/image1.png",
+        "nameChinese": "value",
+        "nameEnglish": "value",
+        "materielCode": "value",
+        "specification": "value",
+        "description": "value",
+        "parentMaterielCode": "value",
+        "parentVersion": "value",
+        "numbers": [
+            {
+                "numberValue": 1,
+                "coordinateX": "200",
+                "coordinateY": "200",
+                "nameChinese": "value",
+                "nameEnglish": "value",
+                "materielCode": "value",
+                "specification": "value",
+                "description": "描述1",
+                "price": "value"
+            }
+        ]
+    }
+]

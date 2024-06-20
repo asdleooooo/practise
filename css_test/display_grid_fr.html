@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid fr Unit Example</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 200px 1fr 2fr 100px; /* 第一列200px，第二列和第三列分别为1fr和2fr，第四列100px */
+      gap: 10px;
+    }
+
+    .grid-item {
+      background-color: lightblue;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">Item 1</div>
+    <div class="grid-item">Item 2</div>
+    <div class="grid-item">Item 3</div>
+    <div class="grid-item">Item 4</div>
+  </div>
+</body>
+</html>
